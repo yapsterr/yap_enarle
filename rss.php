@@ -16,6 +16,7 @@ while($record= mysqli_fetch_assoc($query)) {
     $rss .= '<browser>' . $browser. '</browser>';
     $rss .= '<creator>' . $creator . '</creator>';
     $rss .= '<publish>' . $publish . '</publish>';
+    $rss .= '<language>' . $language . '</language>';
     $rss .= '</web>';
 }
 $rss .= '</channel>';
