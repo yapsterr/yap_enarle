@@ -1,23 +1,23 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://exercise1xml.herokuapp.com/rss.php");//XML page URL
+ $domOBJ->load("");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("anime");
+ $content = $domOBJ->getElementsByTagName("browser");
  
  ?>
-<h2> Anime Informations </h2>
+<h2> Web Browsers </h2>
  <ul>
     <?php
  foreach( $content as $data )
  {
-   $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
-   $author = $data->getElementsByTagName("author")->item(0)->nodeValue;
-   $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
+   $name = $data->getElementsByTagName("browsername")->item(0)->nodeValue;
+   $creator= $data->getElementsByTagName("creator")->item(0)->nodeValue;
+   $publish = $data->getElementsByTagName("publish")->item(0)->nodeValue;
   
-   echo "<li><b>Title of Anime:</b> $title
+   echo "<li><b>Browser Name:</b> $name
             <ul>
-                <li> <b>The Author:</b> $author</li>
-                <li> <b>Descriptions:</b> $description</li>
+                <li> <b>The Creator:</b> $creator</li>
+                <li> <b>Published:</b> $publish</li>
             </ul>
         </li>";
  }
