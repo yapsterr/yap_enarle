@@ -9,11 +9,11 @@
            
        
         <?php
-              foreach($content as $anime)
+              foreach($content as $data)
         {          
-           $Title = $anime->getElementsByTagName("anime_title")->item(0)->nodeValue;
-           $Author = $anime->getElementsByTagName("anime_author")->item(0)->nodeValue;
-           $Description = $anime->getElementsByTagName("anime_description")->item(0)->nodeValue;
+           $Title = $data->getElementsByTagName("anime_title")->item(0)->nodeValue;
+           $Author = $data->getElementsByTagName("anime_author")->item(0)->nodeValue;
+           $Description = $data->getElementsByTagName("anime_description")->item(0)->nodeValue;
            echo "<ul><h2>$Title</h2>
                     <ul>
                         <li>Author: $Author </li>
