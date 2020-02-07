@@ -1,25 +1,23 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://jubelagxml.herokuapp.com/rss.php");//XML page URL
+ $domOBJ->load("https://xmlyap.herokuapp.com/rss.php");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("ballpen");
+ $content = $domOBJ->getElementsByTagName("anime");
  
  ?>
-<h2> Ballpens </h2>
+<h2> Anime Informations </h2>
  <ul>
     <?php
  foreach( $content as $data )
  {
-   $name = $data->getElementsByTagName("name")->item(0)->nodeValue;
-   $price = $data->getElementsByTagName("price")->item(0)->nodeValue;
-   $color = $data->getElementsByTagName("color")->item(0)->nodeValue;
-   $supplier = $data->getElementsByTagName("supplier")->item(0)->nodeValue;
+   $anime_title = $data->getElementsByTagName("anime_title")->item(0)->nodeValue;
+   $anime_author = $data->getElementsByTagName("anime_author")->item(0)->nodeValue;
+   $anime_description = $data->getElementsByTagName("anime_description")->item(0)->nodeValue;
   
-   echo "<li><b>Ballpen:</b> $name
+   echo "<li><b>Title of Anime:</b> $anime_title
             <ul>
-                <li> <b>Price:</b> $price</li>
-                <li> <b>Color:</b> $color</li>
-                <li> <b>Supplier:</b> $supplier</li>
+                <li> <b>The Author:</b> $anime_author</li>
+                <li> <b>Descriptions:</b> $anime_description</li>
             </ul>
         </li>";
  }
