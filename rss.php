@@ -13,9 +13,9 @@ while($record= mysqli_fetch_assoc($query)) {
     extract($record);
     
     $rss .= '<anime>';
-    $rss .= '<title>' . $title. '</title>';
-    $rss .= '<author>' . $author . '</author>';
-    $rss .= '<description>' . $description . '</description>';
+    $rss .= '<title>' . $anime_title. '</title>';
+    $rss .= '<author>' . $anime_author . '</author>';
+    $rss .= '<description>' . $anime_description . '</description>';
     $rss .= '</anime>';
 }
 $rss .= '</channel>';
