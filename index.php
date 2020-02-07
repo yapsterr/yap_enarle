@@ -10,9 +10,9 @@
     <?php
  foreach( $content as $data )
  {
-   $title = $data->getElementsByTagName("anime_title")->item(0)->nodeValue;
-   $author = $data->getElementsByTagName("anime_author")->item(0)->nodeValue;
-   $description = $data->getElementsByTagName("anime_description")->item(0)->nodeValue;
+   $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
+   $author = $data->getElementsByTagName("author")->item(0)->nodeValue;
+   $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
   
    echo "<li><b>Title of Anime:</b> $title
             <ul>
