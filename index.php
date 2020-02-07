@@ -1,6 +1,6 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("");//XML page URL
+ $domOBJ->load("https://exercise1xml.herokuapp.com/rss.php");//XML page URL
  
  $content = $domOBJ->getElementsByTagName("browser");
  
