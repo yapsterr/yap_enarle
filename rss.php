@@ -13,10 +13,10 @@ while($record= mysqli_fetch_assoc($query)) {
     extract($record);
     
     $rss .= '<anime>';
-    $rss .= '<anime_title>' . $anime_title. '</anime_title>';
-    $rss .= '<anime_author>' . $anime_author . '</anime_author>';
-    $rss .= '<anime_description>' . $anime_description . '</anime_description>';
-    $rss .= '</ballpen>';
+    $rss .= '<title>' . $title. '</title>';
+    $rss .= '<author>' . $author . '</author>';
+    $rss .= '<description>' . $description . '</description>';
+    $rss .= '</anime>';
 }
 $rss .= '</channel>';
 $rss .= '</rss>';
