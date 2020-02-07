@@ -12,9 +12,9 @@
         extract($row);
 
         $rssfeed .= '<Anime>';
-        $rssfeed .= '<title>' . $Title . '</title>';
-        $rssfeed .= '<author>' . $Author . '</author>';
-        $rssfeed .= '<description>' . $Description . '</description>';
+        $rssfeed .= '<title>' . $animeT . '</title>';
+        $rssfeed .= '<author>' . $animeA . '</author>';
+        $rssfeed .= '<description>' . $animeD . '</description>';
         $rssfeed .= '</Anime>';
     }
 
