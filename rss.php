@@ -12,11 +12,11 @@ $query = mysqli_query($connect,$sql) or die (mysqli_error($connect));
 while($record= mysqli_fetch_assoc($query)) {
     extract($record);
     
-    $rss .= '<browser>';
-    $rss .= '<browsername>' . $browser. '</browsername>';
+    $rss .= '<web>';
+    $rss .= '<browser>' . $browser. '</browser>';
     $rss .= '<creator>' . $creator . '</creator>';
     $rss .= '<publish>' . $publish . '</publish>';
-    $rss .= '</browser>';
+    $rss .= '</web>';
 }
 $rss .= '</channel>';
 $rss .= '</rss>';
