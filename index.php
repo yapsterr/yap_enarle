@@ -10,11 +10,11 @@
     <?php
  foreach( $content as $data )
  {
-   $browsername = $data->getElementsByTagName("browsername")->item(0)->nodeValue;
+   $browser = $data->getElementsByTagName("browser")->item(0)->nodeValue;
    $creator= $data->getElementsByTagName("creator")->item(0)->nodeValue;
    $publish = $data->getElementsByTagName("publish")->item(0)->nodeValue;
   
-   echo "<li><b>Browser Name:</b> $browsername
+   echo "<li><b>Browser Name:</b> $browser
             <ul>
                 <li> <b>The Creator:</b> $creator</li>
                 <li> <b>Published:</b> $publish</li>
