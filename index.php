@@ -10,9 +10,9 @@
     <?php
  foreach( $content as $data )
  {
-   $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
-   $actors = $data->getElementsByTagName("actors")->item(0)->nodeValue;
-   $detail = $data->getElementsByTagName("detail")->item(0)->nodeValue;
+   $title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
+   $actors = $data->getElementsByTagName("Actors")->item(0)->nodeValue;
+   $detail = $data->getElementsByTagName("Detail")->item(0)->nodeValue;
   
    echo "<li><b>Browser Name:</b> $title
             <ul>
