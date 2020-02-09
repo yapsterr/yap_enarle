@@ -9,13 +9,13 @@ $sql = "SELECT * FROM tblnetflix";
 $query = mysqli_query($connect,$sql) or die (mysqli_error($connect));
 
 
-while($record= mysqli_fetch_assoc($query)) {
-    extract($record);
+while($r= mysqli_fetch_assoc($query)) {
+    extract($r);
     
     $rss .= '<Movie>';
-    $rss .= '<Title>' . $title. '</Title>';
-    $rss .= '<Actors>' . $actors . '</Actors>';
-    $rss .= '<Detail>' . $detail . '</Detail>';
+    $rss .= '<Title>' . $r['Title']. '</Title>';
+    $rss .= '<Actors>' . $r['Actors'] . '</Actors>';
+    $rss .= '<Detail>' . $r['Detail'] . '</Detail>';
     $rss .= '</Movie>';
 }
 $rss .= '</channel>';
