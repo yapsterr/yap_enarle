@@ -16,10 +16,10 @@ All you need is a Netflix subscription. And probably a small country's worth of 
     <?php
  foreach( $content as $data )
  {
-   $net_number = $data->getElementsByTagName("Number")->item(0)->nodeValue;
-   $net_title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
-   $net_actors = $data->getElementsByTagName("Actors")->item(0)->nodeValue;
-   $net_detail = $data->getElementsByTagName("Detail")->item(0)->nodeValue;
+   $net_number = $data->getElementsByTagName("net_number")->item(0)->nodeValue;
+   $net_title = $data->getElementsByTagName("net_title")->item(0)->nodeValue;
+   $net_actors = $data->getElementsByTagName("net_actors")->item(0)->nodeValue;
+   $net_detail = $data->getElementsByTagName("net_detai")->item(0)->nodeValue;
   
    echo "<h2><b>Number:</b> $net_number</h2>
             <ul>
