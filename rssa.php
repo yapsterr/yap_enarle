@@ -14,9 +14,9 @@ while($r= mysqli_fetch_assoc($query)) {
     
     $rssa .= '<Netflix>';
     $rssa .= '<ID>' . $number. '</ID>';
-    $rssa .= '<movie>' . $movie. '</movie>';
-    $rssa .= '<starring>' . $starring . '</starring>';
-    $rssa .= '<description>' . $description . '</description>';
+    $rssa .= '<movie>' . $title. '</movie>';
+    $rssa .= '<starring>' . $actors . '</starring>';
+    $rssa .= '<description>' . $details . '</description>';
     $rssa .= '</Netflix>';
 }
 $rssa .= '</channel>';
