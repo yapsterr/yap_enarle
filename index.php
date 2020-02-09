@@ -2,7 +2,7 @@
  $domOBJ = new DOMDocument();
  $domOBJ->load("https://webportalexam.herokuapp.com/rss.php");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("movie");
+ $content = $domOBJ->getElementsByTagName("Movie");
  
  ?>
 <h2> The Best Rom-Coms Netflix Has to Offer </h2>
