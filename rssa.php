@@ -12,12 +12,12 @@ $query = mysqli_query($connect,$sql) or die (mysqli_error($connect));
 while($r= mysqli_fetch_assoc($query)) {
     extract($r);
     
-    $rssa .= '<Movie>';
+    $rssa .= '<Netflix>';
     $rssa .= '<net_number>' . $number. '</net_number>';
     $rssa .= '<net_title>' . $title. '</net_title>';
     $rssa .= '<net_actors>' . $actors . '</net_actors>';
     $rssa .= '<net_detail>' . $detail . '</net_detail>';
-    $rssa .= '</Movie>';
+    $rssa .= '</Netflix>';
 }
 $rssa .= '</channel>';
 $rssa .= '</rss>';
