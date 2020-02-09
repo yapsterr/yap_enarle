@@ -10,14 +10,14 @@
     <?php
  foreach( $content as $data )
  {
-   $Title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
-   $Actors = $data->getElementsByTagName("Actors")->item(0)->nodeValue;
-   $Information = $data->getElementsByTagName("Information")->item(0)->nodeValue;
+   $title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
+   $actors = $data->getElementsByTagName("Actors")->item(0)->nodeValue;
+   $information = $data->getElementsByTagName("Information")->item(0)->nodeValue;
   
-   echo "<li><b>Browser Name:</b> $Title
+   echo "<li><b>Browser Name:</b> $title
             <ul>
-                <li> <b>The Creator:</b> $Actors</li>
-                <li> <b>Published:</b> $Information</li>
+                <li> <b>The Creator:</b> $actors</li>
+                <li> <b>Published:</b> $information</li>
             </ul>
         </li>";
  }
