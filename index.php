@@ -1,6 +1,6 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://webportalexam.herokuapp.com/rss.php");//XML page URL
+ $domOBJ->load("");//XML page URL
  
  $content = $domOBJ->getElementsByTagName("netflix");
  
