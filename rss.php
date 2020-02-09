@@ -13,9 +13,9 @@ while($record= mysqli_fetch_assoc($query)) {
     extract($record);
     
     $rss .= '<movie>';
-    $rss .= '<title>' . $title. '</title>';
-    $rss .= '<actors>' . $actors . '</actors>';
-    $rss .= '<detail>' . $detail . '</detail>';
+    $rss .= '<Title>' . $Title. '</Title>';
+    $rss .= '<Actors>' . $Actors . '</Actors>';
+    $rss .= '<Detail>' . $Detail . '</Detail>';
     $rss .= '</movie>';
 }
 $rss .= '</channel>';
