@@ -13,10 +13,10 @@ while($r= mysqli_fetch_assoc($query)) {
     extract($r);
     
     $rssa .= '<Netflix>';
-    $rssa .= '<ID>' . $number. '</ID>';
-    $rssa .= '<movie>' . $title. '</movie>';
-    $rssa .= '<starring>' . $actors . '</starring>';
-    $rssa .= '<description>' . $details . '</description>';
+    $rssa .= '<number>' . $number. '</number>';
+    $rssa .= '<title>' . $title. '</title>';
+    $rssa .= '<actors>' . $actors . '</actors>';
+    $rssa .= '<details>' . $details . '</details>';
     $rssa .= '</Netflix>';
 }
 $rssa .= '</channel>';
