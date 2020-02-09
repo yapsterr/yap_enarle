@@ -13,7 +13,7 @@ while($record= mysqli_fetch_assoc($query)) {
     extract($record);
     
     $rss .= '<web>';
-    $rss .= '<title>' . $title. '</Tittitlele>';
+    $rss .= '<title>' . $title. '</title>';
     $rss .= '<actors>' . $actors . '</actors>';
     $rss .= '<information>' . $information . '</information>';
     $rss .= '</web>';
